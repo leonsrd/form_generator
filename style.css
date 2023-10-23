@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Bebas+Neue&family=Noto+Sans&family=Poppins:wght@500&family=Roboto+Mono:ital,wght@0,100;1,300&family=Roboto:wght@300&display=swap");
+
+body {
+  background-color: rgba(227, 227, 227, 0.461);
+  height: auto;
+  font-family: "roboto";
+}
+
+input,
+select {
+  background-color: rgba(227, 227, 227, 0.461);
+  border: 2px solid rgba(170, 170, 170, 0);
+  border-radius: 12px;
+  height: 24px;
+  text-indent: 5px;
+}
+
+select {
+  height: 28px;
+  width: 100px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid rgb(56, 55, 55);
+  transition: 0.3s;
+}
+
+#inputs {
+  background-color: white;
+  width: 700px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.rmBtn {
+  background: none;
+  border: none;
+}
+
+.rmBtn:hover {
+  cursor: pointer;
+}
+
+#delX {
+  background-color: none;
+  border: none;
+  width: 26px;
+  height: 26px;
+  filter: grayscale();
+}
+
+#delX:hover {
+  filter: none;
+  transition: 0.2s;
+}
+
+.optionBtn {
+  background-color: red;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  width: auto;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.optionBtn:hover {
+  background-color: rgb(191, 1, 1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.addBtn {
+  background-color: green;
+  font-size: 14px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  width: auto;
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.addBtn:hover {
+  background-color: rgb(0, 84, 0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#mainForm {
+  margin-top: 10px;
+  padding: 10px;
+  width: 700px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.newLabel {
+  color: black;
+  margin-right: 10px;
+}
+
+.newInput {
+  margin-left: 5px;
+}
+
+#optionsList {
+  background-color: rgba(227, 227, 227, 0.461);
+  border-radius: 12px;
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+  text-indent: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#newOption {
+  margin-top: 10px;
+}
+
+#newField {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#dataTable {
+  background-color: white;
+  margin-top: 10px;
+  width: auto;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+th {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 2px solid rgba(136, 136, 136, 0.461);
+}
+
+td {
+  padding: 5px;
+}
+
+#addToMemoryContainer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#savedTables {
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#savedFormsList {
+  margin-bottom: 10px;
+}

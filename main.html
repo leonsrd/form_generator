@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    </head>
+  
+  <body>
+    <h1>Custom form builder</h1>
+
+    <div id="inputs">
+        <h3>Add new field</h3>
+        
+        <label for="inputLabel">Input field label</label>
+        <input type="text" id="inputLabel" name="inputLabel" />
+        <label for="inputType">Input field type</label>
+
+      <select id="inputType" onchange="optionChange(this.value)">
+        <option value="text">Text</option>
+        <option value="select">Select</option>
+      </select>
+      
+      <button class="addBtn" onclick="addField()" id="addFieldButton">Add</button>
+      
+      <div id="newOption" style="display: none" > 
+        <label class='newLabel' for="newOption">New option</label>
+        <input class='newInput' type="text" id="newInput">
+        <button class="addBtn" onclick='addOption()'>Add</button>
+        <br />
+        <h3>Current options</h3>
+        <div id='optionsList'></div>
+        <button type="button" class="optionBtn" onclick="removeOption()">Remove option</button>
+        </br>
+        <button type='button' onclick="addSelectionField()" class="addBtn">Add Selection field</button>
+      </div>
+    </div>
+
+    <form id="mainForm">
+      <h3>New form</h3>
+      <div id="addToMemoryContainer">
+        <label for="addToMemory">Add to memory</label>
+        <input type="checkbox" id="addToMemory" name="addToMemory" value="addToMemory">
+      </div>
+      <br>
+      <button type='submit' id='submitBtn' class="addBtn">Save</button>
+    </form>
+
+    <table id="dataTable" style="display: none;">
+      <thead>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <div id="savedTables" style="display: none;"></div>
+
+     <script src="./script.js" ></script>
+  </body>
+</html>
